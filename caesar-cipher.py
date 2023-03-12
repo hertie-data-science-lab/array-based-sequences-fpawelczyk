@@ -1,6 +1,6 @@
 """
 Date: Feb 19th 2023
-@author: Juan Pablo Brasdefer (juanbrasdefer) Fabian Pawelczyk (fpawelczyk)
+@author: Juan Pablo Brasdefer [225936] (juanbrasdefer) Fabian Pawelczyk [226921] (fpawelczyk)
 """
 
 
@@ -63,7 +63,7 @@ class CaesarCipher:
         # Get the current shift value
         return self.shift
 
-
+### Sample test
 # Create an instance of the CaesarCipher class with a shift value of 3
 cipher = CaesarCipher(3)
 
@@ -88,11 +88,7 @@ print("Secret: ", new_coded)
 current_shift = cipher.get_shift()
 print("Current shift value: ", current_shift)
 
-
-
-cipher = CaesarCipher(3)
-message = "THE EAGLE IS IN PLAY; MEET AT JOE'S"
-coded = cipher.encrypt(message)
-print("Secret: ", coded)
-answer = cipher.decrypt(coded)
+# Decrypt new message
+answer = cipher.decrypt(new_coded)
 print("Message: ", answer)
+
